@@ -97,4 +97,4 @@ EXPOSE 25565/udp
 VOLUME /server
 
 WORKDIR /server
-ENTRYPOINT [ "/bin/bash", "/bootstrap.sh", "--", "./tes3mp-server" ]
+ENTRYPOINT [ "/bin/bash", "/bootstrap.sh", "--", "exec ./tes3mp-server" ]
